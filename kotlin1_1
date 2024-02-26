@@ -1,0 +1,18 @@
+fun main() {
+    print("Enter the first speed:\nV1 = ")
+    val V1 = readLine()!!.toFloat()
+
+    print("Enter the second speed:\nV2 = ")
+    val V2 = readLine()!!.toFloat()
+
+    print("Enter the time:\nT = ")
+    val T = readLine()!!.toFloat()
+
+    print("Enter the whole distance:\nS = ")
+    val S = readLine()!!.toFloat()
+
+    val D = S - (V1 * T + V2 * T)
+    println("The distance between cars after $T hours:\nD = $D")
+
+    readLine() // Затримка для того, щоб результат встиг відобразитись перед закриттям консолі
+}
