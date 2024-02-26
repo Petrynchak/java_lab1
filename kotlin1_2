@@ -1,0 +1,19 @@
+fun main() {
+
+    print("Enter a two-digit number: ")
+    val number = readLine()?.toIntOrNull()
+
+
+    if (number == null || number < 10 || number > 99) {
+        println("The entered number is not a two-digit number.")
+        return
+    }
+
+
+    val firstDigit = number / 10
+    val secondDigit = number % 10
+
+    val permutation = secondDigit * 10 + firstDigit
+
+    println("A number obtained by permuting its digits: $permutation")
+}
